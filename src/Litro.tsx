@@ -1,6 +1,9 @@
-export default function Litro({conteudo}){
+export default function Litro({conteudo, selecionado}){
 
-    return (<ol>
-        {conteudo.map(c=><li>{c}</li>)}
-    </ol>)
+    return (
+    <ol>
+        {selecionado && <li>X</li>}
+        {conteudo.map((c,k)=><li key={"c"+k}>{c}</li>)}
+    </ol>
+    )
 }
