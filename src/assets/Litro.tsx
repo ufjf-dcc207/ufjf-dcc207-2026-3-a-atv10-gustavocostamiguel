@@ -1,0 +1,5 @@
+Type litro{
+ Max: number;
+
+
+}
