@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import Litro from './Litro'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const garrafa01 = ["red","blue","green","yellow"]
 
   return (
     <>
-      
+      <Litro conteudo={garrafa01}/>
     </>
   )
 }
